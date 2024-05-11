@@ -34,7 +34,6 @@ Developed by: Ann Blessy Philips
 Registeration Number : 212222040008
 */
 ```
-
 ### In activity_main.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -53,13 +52,11 @@ Registeration Number : 212222040008
         android:listSelector="#E3B5F6" />
 </LinearLayout>
 ```
-
 ### In MainActivity.java
 ```
 package com.example.listviewimage;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -79,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
-
 ### In activity_listview.xml
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -92,7 +88,6 @@ public class MainActivity extends AppCompatActivity {
         android:id="@+id/icon"
         android:layout_width="50dp"
         android:layout_height="50dp" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="353dp"
@@ -102,7 +97,6 @@ public class MainActivity extends AppCompatActivity {
         android:textSize="20sp" />
 </LinearLayout>
 ```
-
 ### In CustomAdapter.java
 ```
 package com.example.listviewimage;
@@ -115,7 +109,6 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import java.util.zip.Inflater;
 
 public class CustomAdapter extends BaseAdapter {
@@ -130,22 +123,18 @@ public class CustomAdapter extends BaseAdapter {
         this.flags = flags;
         inflter = (LayoutInflater.from(applicationContext));
     }
-
     @Override
     public int getCount() {
         return countryList.length;
     }
-
     @Override
     public Object getItem(int i) {
         return null;
     }
-
     @Override
     public long getItemId(int i) {
         return 0;
     }
-
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         view = inflter.inflate(R.layout.activity_listview, null);
@@ -159,11 +148,7 @@ public class CustomAdapter extends BaseAdapter {
 ```
 
 ## OUTPUT
-
-![7(1)](https://github.com/AnnBlessy/listview/assets/119477835/bebbcd85-7484-48c3-bb36-bceca22da480)
-
-![7(2)](https://github.com/AnnBlessy/listview/assets/119477835/0cfd6a75-d25b-47b4-bef6-ac3ccdf92286)
-
+![7(1)](https://github.com/AnnBlessy/listview/assets/119477835/e6d20ced-857e-4e7c-af93-aa950fb4413b)                         ![7(2)](https://github.com/AnnBlessy/listview/assets/119477835/728ca462-2e18-4645-aef1-726f76122b2d)
 
 ## RESULT
 Thus a Simple Android Application to create and develop the application to display the country name with image using list view in android studio is developed and executed successfully.
